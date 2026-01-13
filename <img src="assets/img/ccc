@@ -6,12 +6,13 @@
   <title>Kyle Connolly — Content & SEO</title>
   <meta name="description" content="Kyle Connolly — Content & SEO Specialist based in the Cotswolds. Content strategy, SEO, AI search, and performance-led editorial programmes."/>
   <meta name="theme-color" content="#0b0f14"/>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Optional: if you want the same feel as the reference site, a clean sans font helps.
-       You can remove these two lines to use system fonts only. -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css"/>
+
+  <!-- IMPORTANT: root paths (no /assets/) -->
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 
 <body>
@@ -23,6 +24,7 @@
         <span class="brand__mark" aria-hidden="true"></span>
         <span class="brand__text">Kyle Connolly</span>
       </a>
+
       <nav class="nav" aria-label="Primary">
         <a href="#what">What I do</a>
         <a href="#skills">Skills</a>
@@ -30,13 +32,16 @@
         <a href="#tools">Tools</a>
         <a href="#experience">Experience</a>
       </nav>
+
       <div class="topbar__cta">
         <a class="btn btn--ghost" href="mailto:kylemconnolly4@gmail.com">Contact</a>
       </div>
+
       <button class="menu" type="button" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
+
     <div class="mobile" hidden>
       <nav class="mobile__nav" aria-label="Mobile">
         <a href="#what">What I do</a>
@@ -57,10 +62,12 @@
           <p class="eyebrow">Content & SEO</p>
           <h1>Hi, I’m Kyle Connolly</h1>
           <p class="lead">Content and SEO Specialist based in the Cotswolds</p>
+
           <div class="hero__actions">
             <a class="btn btn--primary" href="mailto:kylemconnolly4@gmail.com">Contact me</a>
             <a class="btn btn--ghost" href="#work" data-scroll>See projects</a>
           </div>
+
           <div class="hero__meta">
             <div class="meta">
               <span class="meta__k">Focus</span>
@@ -75,8 +82,7 @@
 
         <div class="hero__media">
           <div class="media media--profile">
-            <img src="assets/img/profilepic.jpg" alt="Portrait of Kyle Connolly" loading="lazy">
-            <div class="media__hint">Replace <code>assets/img/profilepic.jpg</code> with your uploaded profile image.</div>
+            <img src="profilepic.jpg" alt="Portrait of Kyle Connolly" loading="lazy">
           </div>
         </div>
       </div>
@@ -92,6 +98,7 @@
             I design and lead high-performing editorial programmes for global B2B and B2C brands, combining SEO,
             emerging AI search and performance insight with hands-on execution and senior stakeholder partnership.
           </p>
+
           <div class="chips">
             <span class="chip">Content strategy</span>
             <span class="chip">Technical + on-page</span>
@@ -101,8 +108,7 @@
         </div>
 
         <div class="media">
-          <img src="assets/img/fullstack.jpg" alt="Abstract workspace or supporting visual" loading="lazy">
-          <div class="media__hint">Replace <code>assets/img/fullstack.jpg</code> with your uploaded image.</div>
+          <img src="fullstack.jpg" alt="Supporting visual" loading="lazy">
         </div>
       </div>
     </section>
@@ -189,7 +195,7 @@
         <div class="carousel" data-carousel>
           <article class="card">
             <div class="card__media">
-              <img src="assets/img/toblerone.jpg" alt="Toblerone project visual" loading="lazy">
+              <img src="toblerone.jpg" alt="Toblerone project visual" loading="lazy">
             </div>
             <div class="card__body">
               <h3>Hijacking the SERP for Toblerone</h3>
@@ -202,7 +208,7 @@
 
           <article class="card">
             <div class="card__media">
-              <img src="assets/img/trustford.jpg" alt="TrustFord project visual" loading="lazy">
+              <img src="trustford.jpg" alt="TrustFord project visual" loading="lazy">
             </div>
             <div class="card__body">
               <h3>Electrifying TrustFord</h3>
@@ -215,7 +221,7 @@
 
           <article class="card">
             <div class="card__media">
-              <img src="assets/img/ernestjones.jpg" alt="Ernest Jones project visual" loading="lazy">
+              <img src="ernestjones.jpg" alt="Ernest Jones project visual" loading="lazy">
             </div>
             <div class="card__body">
               <h3>Time’s up for Ernest Jones</h3>
@@ -228,7 +234,7 @@
 
           <article class="card">
             <div class="card__media">
-              <img src="assets/img/hsamuel.jpg" alt="H Samuel project visual" loading="lazy">
+              <img src="hsamuel.jpg" alt="H Samuel project visual" loading="lazy">
             </div>
             <div class="card__body">
               <h3>Diamonds are H Samuel’s best friend</h3>
@@ -241,7 +247,7 @@
 
           <article class="card">
             <div class="card__media">
-              <img src="assets/img/seedsman.jpg" alt="Seedsman project visual" loading="lazy">
+              <img src="seedsman.jpg" alt="Seedsman project visual" loading="lazy">
             </div>
             <div class="card__body">
               <h3>Rescuing Seedsman from a destructive migration</h3>
@@ -319,8 +325,6 @@
             <span class="logo" aria-hidden="true">Meta Ads Manager</span>
           </div>
         </div>
-
-        <p class="note">If you want actual brand logos instead of text, place PNG/SVG files in <code>assets/img/tools/</code> and I’ll wire them in.</p>
       </div>
     </section>
 
@@ -427,9 +431,9 @@
       <div class="container cta-card">
         <div>
           <h2>Download CV</h2>
-          <p class="sub">Add your PDF to <code>assets/cv/</code> and link it here.</p>
+          <p class="sub">Your CV should be in the repo root as <code>Kyle-Connolly-CV.pdf</code>.</p>
         </div>
-        <a class="btn btn--primary" href="assets/cv/Kyle-Connolly-CV.pdf" download>Download CV</a>
+        <a class="btn btn--primary" href="Kyle-Connolly-CV.pdf" download>Download CV</a>
       </div>
     </section>
 
@@ -451,6 +455,7 @@
     </footer>
   </main>
 
-  <script src="assets/js/script.js"></script>
+  <!-- IMPORTANT: root path (no /assets/) -->
+  <script src="script.js"></script>
 </body>
 </html>
